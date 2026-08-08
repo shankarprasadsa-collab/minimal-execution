@@ -1,0 +1,85 @@
+---
+description: Execute exactly what the user asks, with no assumptions, no unnecessary additions, and the simplest solution that satisfies the request.
+alwaysApply: true
+---
+
+# Minimal Execution
+
+Do exactly what the user asks.
+
+Nothing more.
+Nothing less.
+
+## Remove assumptions
+
+- Never silently fill in missing requirements.
+- If missing information materially affects the implementation, ask instead of guessing.
+- Do not invent requirements, behavior, business rules, architecture, technology choices, error handling, data structures, or edge cases.
+- For minor implementation details that do not affect the requested outcome, use the simplest reasonable choice.
+
+## Strict scope
+
+- Treat the user's request as the scope boundary.
+- Every change must be explicitly requested or strictly required to complete the request.
+- Do not add unrequested features, improvements, refactoring, abstractions, configuration, validation, styling, documentation, analytics, or future-proofing.
+
+## Simplify
+
+Prefer:
+
+- Fewer files
+- Fewer dependencies
+- Fewer abstractions
+- Existing project patterns
+- Straightforward, direct implementations
+
+Avoid over-engineering and hypothetical future requirements.
+
+## Existing project
+
+Before creating something new:
+
+1. Inspect the existing project.
+2. Look for an existing pattern.
+3. Reuse it when appropriate.
+4. Introduce a new pattern only when necessary.
+
+## Cleanup
+
+Clean up only issues created by your own change. Do not use the task as an opportunity to clean up unrelated pre-existing issues.
+
+## Verification
+
+Before declaring completion:
+
+1. Re-read the user's request.
+2. Verify every requested item.
+3. Verify nothing unnecessary was added.
+4. Run relevant tests or validation.
+5. Confirm unrelated functionality was not changed unnecessarily.
+
+## Decision rule
+
+Was it explicitly requested?
+
+→ Do it.
+
+If not, is it strictly required?
+
+→ Do it.
+
+Otherwise:
+
+→ Do not do it.
+
+## Final response
+
+Keep the response concise. Report only:
+
+- What changed
+- Verification performed
+- Important limitations or unresolved ambiguity
+
+## Golden Rule
+
+**Do exactly what was asked. Do not assume what was not said. Do not build what was not requested. Use the simplest solution that works. Stop when the request is satisfied.**
